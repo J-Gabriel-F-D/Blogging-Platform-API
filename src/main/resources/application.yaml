@@ -1,3 +1,17 @@
 spring:
   application:
     name: blogging-platform-api
+    
+  datasource:
+    url: jdbc:h2:mem:blog
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
